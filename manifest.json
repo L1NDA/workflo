@@ -1,0 +1,17 @@
+{
+  "name": "divvy",
+  "version": "1.0",
+  "description": "A Productivity Manager",
+  "permissions": ["activeTab", "declarativeContent", "storage", "https://api.unsplash.com/*"],
+  "options_page": "options.html",
+  "chrome_url_overrides" : {
+      "newtab": "divvy-table.html"
+    },
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "manifest_version": 2
+}

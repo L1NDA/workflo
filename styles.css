@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Muli', sans-serif;
+}
+
+.body-container {
+  margin: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: radial-gradient(ellipse at center, rgba(255,255,255, 0) 0%, rgba(0,0,0, .5) 100%);
+}
+
+table {
+  table-layout:fixed;
+}
+
+tbody {
+  height: 100%;
+  width: 100%;
+}
+
+.col1 {
+  width: 15%;
+  vertical-align: bottom;
+}
+
+.col2, .col3 {
+  width: 45%;
+}
+
+.leaf-container {
+  z-index: 5;
+  height: 60%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.leaf-row {
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 45%;
+  margin-bottom: 15px;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-bottom: 10px;
+  vertical-align: bottom;
+}
+
+.title-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.side {
+  transform: rotate(-90deg);
+}
+
+.leaf {
+  z-index: 5;
+  border: 1px solid white;
+  height: 100%;
+  width: 100%;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.one {
+  border-radius: 50px 0 0 0;
+}
+
+.four {
+  border-radius: 0 0 50px 0;
+}
+
+.leaf-text {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  letter-spacing: 1.2px;
+  padding: 25px 30px;
+  font-weight: 300;
+  line-height: 22px;
+  font-size: 15px;
+  color: white;
+  transition: background-color .5s;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.leaf-text:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color .5s;
+}
+
+#one:focus {
+  border-radius: 50px 0 0 0;
+}
+
+#four:focus {
+  border-radius: 0 0 50px 0;
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  background-image: url(https://source.unsplash.com/collection/786665/1600x900);
+  background-size: cover;
+}
+
+.background {
+  filter: brightness(80%);
+  z-index: 1;
+  object-fit: cover;
+}

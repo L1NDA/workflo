@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300" rel="stylesheet">
+    <title>divvy</title>
+  </head>
+  <body>
+    <div class="body-container">
+      <table class="leaf-container">
+        <tbody>
+
+          <tr class="title-row">
+            <td class="col1"></td>
+            <td class="col2 title">urgent</td>
+            <td class="col3 title">not urgent</td>
+          </tr>
+
+          <tr class="leaf-row">
+            <td class="col1 title side">important</td>
+              <td class="col2 leaf one">
+                <textarea class="leaf-text" id="one"></textarea>
+              </td>
+              <td class="col3 leaf two">
+                <textarea class="leaf-text" id="two"></textarea>
+              </td>
+          </tr>
+
+          <tr class="leaf-row">
+            <td class="col1 title side">not important</td>
+            <td class="col2 leaf three">
+              <textarea class="leaf-text" id="three"></textarea>
+            </td>
+            <td class="col3 leaf four">
+              <textarea class="leaf-text" id="four"></textarea>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="gradient"></div>
+    <div class="background-container">
+      <!-- <img src="https://source.unsplash.com/collection/202300/1600x900" alt="background" class="background"/> -->
+    </div>
+    <script src="scripts.js" type="module"></script>
+  </body>
+</html>
